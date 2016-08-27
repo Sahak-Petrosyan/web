@@ -1,0 +1,21 @@
+body{
+	background-image: url("images/robot3.jpg");
+}
+textarea{
+	width: 250px;
+	height: 40px;
+}
+#showAnswer{
+    display: none;
+}
+h1{
+	color: red;
+}
+h2{
+	color: blue;
+	font-size: 35px;
+}
+h3{
+	color: orange;
+	font-size: 35px;
+}

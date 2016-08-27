@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hacker's Language Translator!</title>
+		<link rel="stylesheet" type="text/css" href="hacker.css">
+	</head>
+	<body>
+		<h1>Type Your Word!!!</h1>
+	    <input type="text" id="text"><br>
+	    <br>
+	    <button onclick = "check()">Translate</button>
+	    <br>
+	    <p id = "output"></p>
+		
+	</body>
+	<script>
+	var check = function(){
+    var text = document.getElementById("text").value;
+    var newText = ""; 
+    for(var i = 0; i<=text.length-1; i++){
+   if(text[i]==="A"||(text[i]==="a"))
+   {
+       newText = newText+4;
+   }
+      else if(text[i]==="I"||(text[i]==="i")){
+       newText = newText+1;
+   }
+      else if(text[i]==="S"||(text[i]==="s")){
+          newText = newText+5;
+   }
+    else if(text[i]==="O"||(text[i]==="o")){
+          newText = newText+0;
+   }
+    else if(text[i]==="B"||(text[i]==="b")){
+          newText = newText+8;
+   }
+   else{
+       newText = newText+text[i];
+   }
+    }
+   var output = document.getElementById("output");
+   output.innerHTML = newText;
+};
+	</script>
+</html>

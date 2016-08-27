@@ -1,0 +1,12 @@
+body{
+	background-image: url("images/hacker3.jpg")
+}
+#text{
+	width:260px;
+	height: 35px;
+}
+button{
+	width: 200px;
+	text-align: center;
+	height: 25px;
+}

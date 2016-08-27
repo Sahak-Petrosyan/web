@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Website's Test</title>
+		<link rel="stylesheet" type="text/css" href="test.css"> 
+	</head>
+	<body>
+	    <h3>Թեստ</h3>
+	    <h6>(Յուրաքանչյուր Առաջադրանքը Գնահատվում է 1 Միավոր)</h6>
+	    <h4>Ո՞վ է Microsoft-ի Տերը?</h4>
+	    <form>
+	        <label>
+	            <input type="radio" id="jobs" name="owner" >1.Steve Jobs<br>
+	            <input type="radio" id="wozniak" name="owner" >2.Steve Wozniak<br>
+	            <input type="radio" id="gates" name="owner" >3.Bill Gates<br>
+	            <input type="radio" id="brin" name="owner" >4.Sergey Brin<br>
+	            <hr>
+	        </label>
+	    </form>
+	    <h4>Ո՞րն է Առաջին Համակարգիչը</h4>
+	    <form>
+	        <label>
+	            <input type="radio" id="imac" name="computer" >1.Imac<br>
+	            <input type="radio" id="eniac" name="computer" >2.ENIAC<br>
+	            <input type="radio" id="com64" name="computer" >3.Commodore 64<br>
+	            <input type="radio" id="ibm" name="computer" >4.IBM PS/1<br>
+	            <hr>
+	        </label>
+	    </form>
+	    <h4>Ո՞վ է Samsung-ի Հիմնադիրը</h4>
+	    <form>
+	        <label>
+	            <input type="radio" id="jamie" name="samsung" >1.Jamie Zawinski<br>
+	            <input type="radio" id="anders" name="samsung" >2.Anders Hejlsberg<br>
+	            <input type="radio" id="ken" name="samsung" >3.Ken Thompson<br>
+	            <input type="radio" id="lee" name="samsung" >4.Lee Byung-chul<br>
+	            <hr>
+	        </label>
+	    </form>	
+	    <h4>Ով է LG-ի Հիմնադիրը?</h4>
+	    <form>
+	        <label>
+	            <input type="radio" id="koo" name="lg" >1.Koo In-Hwoi<br>
+	            <input type="radio" id="ward" name="lg" >2.Ward Cunningham<br>
+	            <input type="radio" id="john" name="lg" >3.John Warnock<br>
+	            <input type="radio" id="sid" name="lg" >4.Sid Meier<br>
+	            <hr>
+	        </label>
+	    </form>
+	    <h4>Ով է Ստեղծել Minecraft-ը?</h4>
+	    <form>
+	        <label>
+	            <input type="radio" id="markus" name="minecraft" >1.Markus Persson<br>
+	            <input type="radio" id="aaron" name="minecraft" >2.Aaron Swartz<br>
+	            <input type="radio" id="linus" name="minecraft" >3.Linus Torvalds<br>
+	            <input type="radio" id="jack" name="minecraft" >4.Jack Dorsey<br>
+	            <hr>
+	        </label>
+	    </form>	
+	    <form>
+	        <label>
+	            <input type="submit" value="Ստուգիր Պատասխանները!" onclick="calculateMyResult()">
+	        </label>
+	    </form>
+	</body>
+	<script>
+	var calculateMyResult = function(){
+    var points = 0;
+    
+    if(document.getElementById("gates").checked){
+        points++;
+    }
+    if(document.getElementById("eniac").checked){
+        points++;
+    }
+    if(document.getElementById("lee").checked){
+        points++;
+    }
+    if(document.getElementById("koo").checked){
+        points++;
+    }
+    if(document.getElementById("markus").checked){
+        points++;
+    }
+    alert(points);
+};
+	</script>
+	
+</html>
